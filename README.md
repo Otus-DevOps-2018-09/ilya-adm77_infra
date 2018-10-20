@@ -1,3 +1,15 @@
+========================================= HOMEWORK 5 =====================================
+
+
+# Create ubuntu16.json packer GCP image for reddit base installation
+
+# Create immutable.json packer GCP image for reddit full installation
+
+# Define variables in variables.json. Put it to .gitignore
+
+# Fast create VM instance by using gcloud console and reddit-full gcp image
+
+
 ================================================= HOMEWORK 4 ==================================================
 
 testapp_IP = 35.204.153.218

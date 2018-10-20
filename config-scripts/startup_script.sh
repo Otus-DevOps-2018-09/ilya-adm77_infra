@@ -1,4 +1,4 @@
-#~/bin/bash
+#!/bin/bash
 
 echo 'Installing Ruby'
 
@@ -11,7 +11,7 @@ ruby -v
 bundle -v
 
 echo 'Installation completed'
-#!/bin/bash
+
 
 echo 'Installing MongoDB'
 
@@ -26,7 +26,6 @@ echo 'Starting MongoDB'
 sudo systemctl start mongod
 sudo systemctl enable mongod
 
-#!/bin/bash
 
 echo 'Deploying application'
 

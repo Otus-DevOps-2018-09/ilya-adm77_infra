@@ -1,0 +1,10 @@
+
+{
+    "project_id": "Infra 1",
+    "source_image_family": "ubuntu-1604-lts",
+    "image_description": "test image for Reddit app",
+    "disk_size": "10",
+    "disk_type": "pd-standard",
+    "network": "default",
+    "tags": ""
+}

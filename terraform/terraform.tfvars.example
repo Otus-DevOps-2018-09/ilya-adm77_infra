@@ -1,4 +1,0 @@
-project = "eloquent-anthem-218811"
-public_key_path = "~/.ssh/appuser.pub"
-disk_image = "reddit-base"
-private_key = "~/.ssh/appuser"

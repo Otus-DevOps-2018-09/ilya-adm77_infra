@@ -1,5 +1,5 @@
 data "template_file" "puma" {
-  template = "${file("${var.file_path}/puma.service")}"
+  template = "${file("/${path.module}/files/puma.service")}"
 
   vars {
     db_ip = "${var.db_instance_ip}"
@@ -39,7 +39,7 @@ provisioner "file" {
 
 provisioner "remote-exec" {
 
-    script = "${var.file_path}/deploy.sh"
+    script = "${path.module}/files/deploy.sh"
 } 
 
 }

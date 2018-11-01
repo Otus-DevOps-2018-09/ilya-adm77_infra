@@ -23,7 +23,6 @@ module "app" {
   zone            = "${var.instance_zone}"
   app_disk_image  = "${var.app_disk_image}"
   private_key     = "${var.private_key}"
-  file_path       = "${var.file_path}"
   db_instance_ip  = "${module.db.db_external_ip}"
 }
 

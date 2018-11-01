@@ -40,9 +40,5 @@ variable db_disk_image {
 variable private_key {
   description = "Key for provisioner connection over SSH"
 }
-variable file_path {
-
-description = "Script files for deploying app"
-}
 
 

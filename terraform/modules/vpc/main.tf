@@ -8,7 +8,7 @@ allow {
     ports    = ["22"]
   }
 
-target_tags = ["reddit-app"]
+target_tags = ["reddit-app","reddit-db"]
 
 source_ranges = "${var.source_ranges}"
 }

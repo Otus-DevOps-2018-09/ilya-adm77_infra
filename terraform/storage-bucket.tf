@@ -6,7 +6,7 @@ region = "${var.region}"
 module "storage-bucket" {
 source = "SweetOps/storage-bucket/google"
 version = "0.1.1"
-name = ["bucket-reddit-app1", "bucket-reddit-app2"]
+name = ["bucket-reddit-app"]
 }
 output storage-bucket_url {
 value = "${module.storage-bucket.url}"

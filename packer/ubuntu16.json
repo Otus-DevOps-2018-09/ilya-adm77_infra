@@ -1,7 +1,5 @@
 {
     "variables": {
-    "project_id": null,
-    "source_image_family": null,
     "machine_type":"f1-micro"
   },
 
@@ -13,7 +11,6 @@
             "image_family": "reddit-base",
             "source_image_family": "{{user `source_image_family`}}",
             "image_description": "{{user `image_description`}}",
-            "disk_size": "{{user `disk_size`}}",
             "disk_type": "{{user `disk_type`}}",
             "network": "{{user `network`}}",
             "tags": "{{user `tags`}}",

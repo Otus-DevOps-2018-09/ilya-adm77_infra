@@ -10,14 +10,14 @@ config {
   }
   }
 
-module "db" {
+  module "db" {
   source          = "../modules/db"
   public_key_path = "${var.public_key_path}"
   zone            = "${var.instance_zone}"
   db_disk_image   = "${var.db_disk_image}"
 }
 
-module "app" {
+ module "app" {
   source          = "../modules/app"
   public_key_path = "${var.public_key_path}"
   zone            = "${var.instance_zone}"

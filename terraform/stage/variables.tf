@@ -4,21 +4,21 @@ variable project {
 
 variable region {
   description = "Region"
-  default     = "europe-west1"
+  default     = "europe-west4"
 }
 
 variable public_key_path {
   description = "Path to the public key used for ssh access"
 }
 
-variable disk_image {
+ variable disk_image {
   description = "Disk image"
 }
 
 
 variable instance_zone {
   description = "Define zone for VM instance"
-  default     = "europe-west1-b"
+  default     = "europe-west4-a"
 }
 
 variable "instance_name" {

@@ -1,10 +1,10 @@
-data "template_file" "puma" {
-  template = "${file("/${path.module}/files/puma.service")}"
-
-  vars {
-    db_ip = "${var.db_instance_ip}"
-  }
-}
+#data "template_file" "puma" {
+#  template = "${file("/${path.module}/files/puma.service")}"
+#
+#  vars {
+#    db_ip = "${var.db_instance_ip}"
+#  }
+#}
  
 resource "google_compute_instance" "app" {
   name         = "reddit-app"
@@ -32,15 +32,15 @@ connection {
     agent       = false
     private_key = "${file(var.private_key)}"
   }
-provisioner "file" {
-    content = "${data.template_file.puma.rendered}"
-    destination = "/tmp/puma.service"
-  }
+#provisioner "file" {
+#    content = "${data.template_file.puma.rendered}"
+#    destination = "/tmp/puma.service"
+#  }
 
-provisioner "remote-exec" {
-
-    script = "${path.module}/files/deploy.sh"
-} 
+#provisioner "remote-exec" {
+#
+#    script = "${path.module}/files/deploy.sh"
+#} 
 
 }
 resource "google_compute_address" "app_ip" {

@@ -1,5 +1,6 @@
 variable project {
   description = "Project ID"
+  default = "eloquent-anthem-218811"
 }
 
 variable region {

@@ -15,9 +15,6 @@ variable disk_image {
   description = "Disk image"
 }
 
-variable private_key {
-  description = "Key for provisioner connection over SSH"
-}
 
 variable instance_zone {
   description = "Define zone for VM instance"
@@ -40,3 +37,8 @@ variable db_disk_image {
   description = "Disk image for reddit db"
   default     = "reddit-base-db"
 }
+variable private_key {
+  description = "Key for provisioner connection over SSH"
+}
+
+

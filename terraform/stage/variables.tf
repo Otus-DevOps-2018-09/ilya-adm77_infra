@@ -4,7 +4,7 @@ variable project {
 
 variable region {
   description = "Region"
-  default     = "europe-west4"
+  default     = "europe-west1"
 }
 
 variable public_key_path {
@@ -18,7 +18,7 @@ variable public_key_path {
 
 variable instance_zone {
   description = "Define zone for VM instance"
-  default     = "europe-west4-a"
+  default     = "europe-west1-b"
 }
 
 variable "instance_name" {

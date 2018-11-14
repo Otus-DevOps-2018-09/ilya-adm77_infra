@@ -7,3 +7,4 @@
 .terraform/
 *.retry
 gce.ini
+jdauphant.nginx

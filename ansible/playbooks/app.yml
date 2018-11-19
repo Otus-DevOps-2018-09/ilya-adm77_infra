@@ -1,5 +1,5 @@
 ---
-- name: Configure app  
+- name: Configure app
   hosts: reddit-app
   become: true
 

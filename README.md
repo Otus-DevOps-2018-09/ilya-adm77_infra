@@ -15,11 +15,8 @@
 - Подключил Dynamic Inventory через модуль gce.py;
 - Расположил модули gce.py и gce.ini в папках stage и prod;
 - в папке group_vars переименовал файлы из app и db в tag_reddit-app и tag_reddit-db;
-- Внутренний ip - адрес инстанса БД передается из инвентори через переменную вида
-  db_host: "{{ hostvars['reddit-db']['gce_private_ip'] }}";
-- Playbook с нужным инвентори можно запустить через ansible.cfg или параметр -i и
-  указанием пути;
-ДЗ **
+- Внутренний ip - адрес инстанса БД передается из инвентори через переменную вида db_host: "{{ hostvars['reddit-db']['gce_private_ip'] }}";
+- Playbook с нужным инвентори можно запустить через ansible.cfg или параметр -i и указанием пути;
 
 
 

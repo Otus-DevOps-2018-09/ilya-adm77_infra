@@ -3,4 +3,4 @@
   hosts: reddit-db
   become: true
   roles:
-    - db 
+    - db

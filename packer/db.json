@@ -1,8 +1,9 @@
 {
     "variables": {
     "machine_type":"f1-micro",
-    "project_id": " ",
-    "source_image_family": " "
+     "project_id": "eloquent-anthem-218811",
+    "source_image_family": "ubuntu-1604-lts"
+
 
   },
 
@@ -25,9 +26,8 @@
     ],
     "provisioners": [
 	    {    
-	    "type": "shell",
-            "script": "scripts/install_mongodb.sh",
-            "execute_command": "sudo {{.Path}}"
+	    "type": "ansible",
+	    "playbook_file": "ansible/packer_db.yml"
         }
     ]
 }

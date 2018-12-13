@@ -1,10 +1,11 @@
 variable project {
   description = "Project ID"
+  default = "eloquent-anthem-218811"
 }
 
 variable region {
   description = "Region"
-  default     = "europe-west1"
+  default     = "europe-north1"
 }
 
 variable public_key_path {
@@ -18,7 +19,7 @@ variable disk_image {
 
 variable instance_zone {
   description = "Define zone for VM instance"
-  default     = "europe-west1-b"
+  default     = "europe-north1-b"
 }
 
 variable "instance_name" {
